@@ -1,0 +1,45 @@
+.sign {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.contentItem {
+    position: relative;
+    display: flex;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contentItem:hover {
+    .contentItemInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contentItemActions {
+        display: block;
+    }
+}
+
+.contentItemInfo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+}
+
+.contentItemActions {
+    display: none;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
